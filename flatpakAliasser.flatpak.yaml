@@ -1,4 +1,4 @@
-id: com.example.FlatpakAliasser
+id: net.hda0.FlatpakAliasser
 runtime: org.freedesktop.Platform
 runtime-version: "22.08"
 sdk: org.freedesktop.Sdk

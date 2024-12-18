@@ -8,5 +8,5 @@ Flatpak Aliasser will soon be available on Flathub.
 ## Usage
 Run the Flatpak Aliasser to regenerate aliases:
 ```bash
-flatpak run com.example.FlatpakAliasser
+flatpak run net.hda0.FlatpakAliasser
 ```
