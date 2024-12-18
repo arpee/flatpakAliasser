@@ -32,7 +32,7 @@ fi
 
 # Generate aliases for all Flatpak applications
 echo "Generating Flatpak aliases..."
-flatpak list --columns=name,application | tail -n +2 | while IFS=$'\t' read -r app_name app_id; do
+flatpak-spawn --host flatpak list --columns=name,application | tail -n +2 | while IFS=$'\t' read -r app_name app_id; do
     # Convert app name to a sanitized alias
     alias_name=$(echo "$app_name" | tr '[:upper:]' '[:lower:]' | tr -d '[:space:][:punct:]')
 

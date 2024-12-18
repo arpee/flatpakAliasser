@@ -1,8 +1,9 @@
-id: net.hda0.FlatpakAliasser
+id: net.hda0.Flatpakaliasser
 runtime: org.freedesktop.Platform
 runtime-version: "22.08"
 sdk: org.freedesktop.Sdk
 command: flatpakAliasser.sh
+version: 0.0.1
 
 modules:
   - name: flatpak-aliasser
@@ -12,3 +13,12 @@ modules:
     sources:
       - type: file
         path: flatpakAliasser.sh
+
+# Add the following environment section
+finish-args:
+  - --share=network
+  - --socket=wayland
+  - --socket=x11
+  - --filesystem=home
+  - --talk-name=org.freedesktop.Flatpak
+  - --env=PATH=/usr/bin:/app/bin
