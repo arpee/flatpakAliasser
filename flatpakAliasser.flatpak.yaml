@@ -1,0 +1,14 @@
+id: com.example.FlatpakAliasser
+runtime: org.freedesktop.Platform
+runtime-version: "22.08"
+sdk: org.freedesktop.Sdk
+command: flatpakAliasser.sh
+
+modules:
+  - name: flatpak-aliasser
+    buildsystem: simple
+    build-commands:
+      - install -Dm755 flatpakAliasser.sh /app/bin/flatpakAliasser.sh
+    sources:
+      - type: file
+        path: flatpakAliasser.sh
