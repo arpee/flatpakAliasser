@@ -1,6 +1,6 @@
 id: net.hda0.Flatpakaliasser
 runtime: org.freedesktop.Platform
-runtime-version: "22.08"
+runtime-version: "24.08"
 sdk: org.freedesktop.Sdk
 command: flatpakAliasser.sh
 version: 0.0.1
